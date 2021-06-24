@@ -1,14 +1,38 @@
 import './App.css';
-import PopChart from './components/PopChart';
-import LineChart from './components/LineChart';
-import DonutChart from './components/DonutChart';
+import PopChart from './components/Charts/PopChart';
+import LineChart from './components/Charts/LineChart';
+import DonutChart from './components/Charts/DonutChart';
+import Navigation from './components/Navigation/Navigation';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
+import routes from './routes';
+
+import { useStyles } from './components/Styles';
 
 function App() {
+  const classes = useStyles()
+
   return (
-    <div className="App">
-      <PopChart />
-      <LineChart />
-      <DonutChart />
+    <div className={classes.appRoot}>
+      <Router>
+        <Navigation />
+        <div>
+          <Switch>
+            {routes.map((route, index) => {
+              return (
+                <Route key={index} path={route.path} exact>
+                  {route.component}
+                </Route>
+              )
+            })}
+          </Switch>
+        </div>
+      </Router>
     </div>
   );
 }

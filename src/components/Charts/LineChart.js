@@ -24,8 +24,8 @@ const LineChart = () => {
                 options={stateDataOptions}
                 series={seriesData}
                 type="line"
-                height="450"
-                width="100%"
+                height="300"
+                width="1000"
             />
         </div>
     )

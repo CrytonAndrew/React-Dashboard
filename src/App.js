@@ -1,7 +1,4 @@
 import './App.css';
-import PopChart from './components/Charts/PopChart';
-import LineChart from './components/Charts/LineChart';
-import DonutChart from './components/Charts/DonutChart';
 import Navigation from './components/Navigation/Navigation';
 
 import {

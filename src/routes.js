@@ -4,11 +4,8 @@ import DashboardIconActive from "./Assets/DashboardIconActive.svg"
 import CalenderIcon from "./Assets/calender.svg"
 import CalenderIconActive from "./Assets/calenderActvive.svg"
 
-import SettingIcon from "./Assets/SettingsIcon.svg"
-import SettingIconActive from "./Assets/SettingsIconActive.svg"
 
 import SignOutIcon from "./Assets/SignOutIcon.svg"
-import SignOutIconActive from "./Assets/SignOutIcon.svg"
 
 import HomeScreen from "./Screens/HomeScreen"
 import DayScreen from "./Screens/DayScreen"
